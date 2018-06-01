@@ -1,0 +1,4 @@
+driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+jdbcUrl = jdbc:sqlserver://localhost:22107;DatabaseName=cn.lwy.website
+user =SA
+password =112301

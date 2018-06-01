@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd" updateCheck="false"
+         monitoring="autodetect" dynamicConfig="true">
+
+    <!--缓存首页的数据-->
+    <cache name="indexCache"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="0"
+           eternal="true"
+    />
+    <!--缓存心情列表的数据-->
+    <cache name="moodListCache"
+           overflowToDisk="true"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="500"
+           eternal="true"
+    />
+    <!--缓存文章列表的数据-->
+    <cache name="articleListCache"
+           overflowToDisk="true"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="500"
+           eternal="true"
+    />
+    <!--缓存作品列表的数据-->
+    <cache name="productionListCache"
+           overflowToDisk="true"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="500"
+           eternal="true"
+    />
+    <!--缓存文章详细信息的数据-->
+    <cache name="articleDetailCache"
+           overflowToDisk="true"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="500"
+           eternal="true"
+    />
+    <!--缓存作品详细信息的数据-->
+    <cache name="productionDetailCache"
+           overflowToDisk="true"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="500"
+           eternal="true"
+    />
+    <!--缓存友情链接的数据-->
+    <cache name="friendLinkCache"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="0"
+           eternal="true"
+    />
+    <!--缓存关于我页面-->
+    <cache name="aboutMeCache"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="0"
+           eternal="true"
+    />
+    <!--缓存留言板页面-->
+    <cache name="messageBoardCache"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off"
+           maxElementsInMemory="0"
+           eternal="true"
+    />
+</ehcache>
